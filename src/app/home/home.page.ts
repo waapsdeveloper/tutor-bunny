@@ -11,7 +11,7 @@ export class HomePage {
   constructor(private nav: NavService) {}
 
   gotoDashboard(){
-    this.nav.push('dashboard')
+    this.nav.push('tabs')
   }
 
 }

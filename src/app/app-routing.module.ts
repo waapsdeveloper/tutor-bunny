@@ -5,15 +5,23 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+  // {
+  //   path: 'dashboard',
+  //   loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  // },
   {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule),
+  },
+  {
+    path: 'profile-details',
+    loadChildren: () => import('./profile-details/profile-details.module').then( m => m.ProfileDetailsPageModule)
   },
 
 

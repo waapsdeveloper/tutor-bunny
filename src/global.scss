@@ -26,3 +26,13 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 @import url('./theme/fonts.scss');
+
+.ion-content-bg{
+  --background: #EBEAEA;
+}
+
+.ion-header-bg{
+  --background: #EBEAEA;
+  background: #EBEAEA;
+}
+
