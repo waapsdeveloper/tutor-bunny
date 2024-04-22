@@ -7,7 +7,6 @@
   flex-direction: row;
   justify-content:space-evenly;
   align-items: center;
-  padding: 8px;
 
   .statistics-box-item-78906{
     display: flex;
@@ -15,8 +14,10 @@
     align-items: center;
     justify-content: center;
     gap: 6px;
-    border-right: 0.25px solid rgba(103,113,105, 0.15);
-    padding: 10px;
+    height: 42px;
+    width: 33%;
+    border-right: 0.25px solid rgba(103, 113, 105, 0.15);
+    // padding: 10px;
     .nbl-687{
       font-size: 14px;
     }
