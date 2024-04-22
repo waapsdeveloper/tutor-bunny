@@ -1,5 +1,7 @@
 {
   "name": "tutor-bunny",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
