@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavService } from '../services/nav.service';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,16 @@ import { NavService } from '../services/nav.service';
 })
 export class HomePage {
 
-  constructor(private nav: NavService) {}
+  constructor(private nav: NavService,
+    public authService: AuthenticationService
+  ) {}
 
   gotoDashboard(){
     this.nav.push('tabs')
   }
+  continueWithGoogle(){
+    this.authService.GoogleAuth()
+  }
+
 
 }

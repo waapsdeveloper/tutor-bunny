@@ -9,13 +9,13 @@ export class OptionBbBoxComponent  implements OnInit {
 
   list = [
     {
-      nbl: 'schedule',
+      nbl: 'Schedule',
       colorClass: '',
       img: 'assets/icon/calendar.svg',
 
     },
     {
-      nbl: ' Create Course',
+      nbl: 'Course',
       colorClass: '',
       img: 'assets/icon/cradd.svg'
     },
