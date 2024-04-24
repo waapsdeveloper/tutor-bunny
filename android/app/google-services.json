@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "968620174522",
+    "project_id": "tutor-bunny-ff340",
+    "storage_bucket": "tutor-bunny-ff340.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968620174522:android:ae6f82896da039b6f7a683",
+        "android_client_info": {
+          "package_name": "com.waaps.tutorbunny"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQx-CsruqWooRD0KmOBkIzTbr1WuTRY0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
