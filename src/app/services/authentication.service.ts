@@ -38,17 +38,22 @@ export class AuthenticationService {
   }
   // Auth providers
   AuthLogin(provider: any) {
-    return this.ngFireAuth
-      .signInWithPopup(provider)
+
+    return new Promise( resolve => {
+      this.ngFireAuth.signInWithPopup(provider)
       .then((result) => {
-        this.ngZone.run(() => {
-          this.nav.push('tabs');
-        });
-        this.SetUserData(result.user);
+        // this.SetUserData(result.user);
+        resolve(true);
       })
       .catch((error) => {
-        window.alert(error);
+        console.log(error)
+        resolve(false)
       });
+    })
+
+
+
+
   }
   // Store user in localStorage
   SetUserData(user: any) {

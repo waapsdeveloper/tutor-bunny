@@ -16,8 +16,10 @@ export class HomePage {
   gotoDashboard(){
     this.nav.push('tabs')
   }
-  continueWithGoogle(){
-    this.authService.GoogleAuth()
+  async continueWithGoogle(){
+    const res = await this.authService.GoogleAuth();
+    this.nav.push('tabs')
+
   }
 
 
